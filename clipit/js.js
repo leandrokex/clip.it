@@ -31,7 +31,7 @@ window.onload = function () {
             color: 0xFFD400,
             backgroundColor: 0xD31027,
             spacing: 8.00,
-            chaos: 7.00
+            chaos: 5.00
         });
     } else {
         console.error("Element with id 'produto' not found.");
