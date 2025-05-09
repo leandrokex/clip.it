@@ -28,7 +28,7 @@ window.onload = function () {
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            color: 0xFFD400,
+            color: 0xFFFFFF,
             backgroundColor: 0xD31027,
             spacing: 8.00,
             chaos: 5.00
