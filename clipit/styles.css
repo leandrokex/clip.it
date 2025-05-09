@@ -1,0 +1,119 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #fff;
+    color: #000;
+}
+
+.hero {
+    background: url('imgs/banner.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero a {
+    margin-top: 30px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.specs-list {
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+.quote {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Stretch It';
+    src: url('./fonts/StretchPro.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#custom-cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    z-index: 9999;
+    background-color: currentColor;
+    mix-blend-mode: difference;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#testemunhos {
+    background: #D31027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D31027, #EA384D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D31027, #EA384D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 200% 200%;
+    animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
