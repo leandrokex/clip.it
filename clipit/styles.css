@@ -6,7 +6,7 @@ body {
 }
 
 .hero {
-    background: url('imgs/banner.png') no-repeat center center/cover;
+    background: url('imgs/banner_2.png') no-repeat center center/cover;
     height: 100vh;
     color: white;
     display: flex;
